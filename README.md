@@ -1,6 +1,6 @@
 # DHTech submission
 
-Since this research project is still ongoing, we are not making the scraping functions public at this time. Instead, the files here will focus on the two parallel implementations explained in the submission. 
+Since this research project is still ongoing, we are not making the scraping functions public at this time. We expect this to change at the time of the presentation in August. Instead, the files here will focus on the two parallel implementations explained in the submission. 
 For this purpose please assume that there is a file __functions.py__ that contains two functions: 
 1. _urlscrape()_ which extracts the URLs of every individual forum when provided with the landing URL of the forum index page of which there are 2500, each containing 100 individual forums.
 2. _scrapeoneforum()_ which scrapes the data of each post within that forum (date, poster, content) to a CSV for future use.
