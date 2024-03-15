@@ -17,7 +17,7 @@ num = multiprocessing.cpu_count()      # This counts how many CPUs are in your c
 num_cores=num-1                      # Here we subtract the core(s) we want to leave free in the system. If using on your laptop leave as many as necessary to not crash any other processes that may be underway ( browsers, programs, etc.)
 Parallel(n_jobs=num_cores,verbose=10)(delayed(urlscrape)(i) for i in pages)  
 
-```
+"""
 The previous line runs the urlscrape function on the specified number of cores. When one of them is done the core is taken up by the next use of the function. 
 For example, if num-cores ends up being 8. The program will scrape pages 1-8 and once one of them is done scraping, which could be 4 or 7 for all we know, that core immediately takes up process 9.
-```
+"""
